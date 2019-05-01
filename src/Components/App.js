@@ -19,6 +19,7 @@ class App extends React.Component {
           <i className='flag us' onClick={() => this.onLanguageChange('english')} />
           <i className='flag fr' onClick={() => this.onLanguageChange('french')} />
         </div>
+        // value will update LanguageContext
         <LanguageContext.Provider value={this.state.language}>
           <UserCreate />
         </LanguageContext.Provider>
